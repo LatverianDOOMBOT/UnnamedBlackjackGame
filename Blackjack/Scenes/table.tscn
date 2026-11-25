@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cf632piocvudx"]
+
+[ext_resource type="PackedScene" uid="uid://bgxcu6lhxyc2r" path="res://Models/Untitled.glb" id="1_ix8et"]
+
+[node name="Table" unique_id=2072480766 instance=ExtResource("1_ix8et")]
+
+[node name="PlayerSpawn" type="Node3D" parent="." index="3" unique_id=1832225304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6422145, 2.1035547)
+
+[node name="Marker3D" type="Marker3D" parent="PlayerSpawn" index="0" unique_id=1686495844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59229827, 0.4385879)
+
+[node name="PlayerCardSpawn" type="Node3D" parent="PlayerSpawn" index="1" unique_id=1749961772]
+
+[node name="Marker3D" type="Marker3D" parent="PlayerSpawn/PlayerCardSpawn" index="0" unique_id=2019276334]
+
+[node name="DealerDemonSpawn" type="Node3D" parent="." index="4" unique_id=516892330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6422145, -2.783196)
+
+[node name="Marker3D" type="Marker3D" parent="DealerDemonSpawn" index="0" unique_id=1726880634]
+
+[node name="DealerDemonCardSpawn" type="Node3D" parent="DealerDemonSpawn" index="1" unique_id=518237289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.3974847)
+
+[node name="Marker3D" type="Marker3D" parent="DealerDemonSpawn/DealerDemonCardSpawn" index="0" unique_id=1328598729]
+
+[node name="DemonSpawn4" type="Node3D" parent="." index="5" unique_id=816099801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5594625, 1.500587, -1.4034412)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn4" index="0" unique_id=1408029781]
+
+[node name="DemonCardSpawn4" type="Node3D" parent="DemonSpawn4" index="1" unique_id=363132399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4157481, 0, 0)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn4/DemonCardSpawn4" index="0" unique_id=777961034]
+
+[node name="DemonSpawn5" type="Node3D" parent="." index="6" unique_id=1814952747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.464499, 1.500587, 1.0616634)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn5" index="0" unique_id=2024302235]
+
+[node name="DemonCardSpawn5" type="Node3D" parent="DemonSpawn5" index="1" unique_id=893503885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6579528, 0, 0)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn5/DemonCardSpawn5" index="0" unique_id=697655889]
+
+[node name="DemonSpawn3" type="Node3D" parent="." index="7" unique_id=1770660636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2755327, 1.500587, 1.0616634)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn3" index="0" unique_id=2105572473]
+
+[node name="DemonCardSpawn3" type="Node3D" parent="DemonSpawn3" index="1" unique_id=2142601418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0892601, 0, 0)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn3/DemonCardSpawn3" index="0" unique_id=1179860009]
+
+[node name="DemonSpawn2" type="Node3D" parent="." index="8" unique_id=310924611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4325676, 1.500587, -1.4034412)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn2" index="0" unique_id=482708968]
+
+[node name="DemonCardSpawn2" type="Node3D" parent="DemonSpawn2" index="1" unique_id=1272510960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5940008, 0, 0)
+
+[node name="Marker3D" type="Marker3D" parent="DemonSpawn2/DemonCardSpawn2" index="0" unique_id=440941431]

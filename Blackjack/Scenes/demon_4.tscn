@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cf7jqprcbe2e6"]
+
+[ext_resource type="Script" uid="uid://cde3sr6uurb68" path="res://Scripts/GameScripts/Demon.gd" id="1_uydol"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2tl2d"]
+
+[node name="Demon4" type="Node3D" unique_id=176120175]
+script = ExtResource("1_uydol")
+risk_chance = 50.0
+metadata/_custom_type_script = "uid://cde3sr6uurb68"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1414949961]
+mesh = SubResource("BoxMesh_2tl2d")

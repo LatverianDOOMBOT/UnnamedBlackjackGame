@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bi8a863sg007o"]
+
+[ext_resource type="Script" uid="uid://c2iqi8t8r2gjq" path="res://Scripts/GameScripts/Card.gd" id="1_rjlel"]
+[ext_resource type="Texture2D" uid="uid://bjyqfvd280cg" path="res://Textures/cards/black/Clovers_2_black.png" id="2_q5obu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8dd1"]
+albedo_color = Color(0.20942885, 0.20942888, 0.20942888, 1)
+stencil_mode = 3
+stencil_flags = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_e484p"]
+material = SubResource("StandardMaterial3D_k8dd1")
+size = Vector3(0.7, 1, 0.01)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eoj1u"]
+albedo_texture = ExtResource("2_q5obu")
+stencil_mode = 3
+stencil_flags = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_fpac0"]
+material = SubResource("StandardMaterial3D_eoj1u")
+size = Vector2(0.7, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fujv1"]
+
+[sub_resource type="Sky" id="Sky_rjlel"]
+sky_material = SubResource("ProceduralSkyMaterial_fujv1")
+
+[sub_resource type="Environment" id="Environment_2tl2d"]
+background_mode = 2
+sky = SubResource("Sky_rjlel")
+
+[node name="Card" type="Node3D" unique_id=1932067430]
+transform = Transform3D(-0.25, 0, -2.1855694e-08, 0, 0.25, 0, 2.1855694e-08, 0, -0.25, 0, 0, 0)
+script = ExtResource("1_rjlel")
+
+[node name="CardBody" type="MeshInstance3D" parent="." unique_id=341887817]
+mesh = SubResource("BoxMesh_e484p")
+
+[node name="CardFront" type="MeshInstance3D" parent="." unique_id=379718226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011)
+mesh = SubResource("QuadMesh_fpac0")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=782729894]
+environment = SubResource("Environment_2tl2d")
